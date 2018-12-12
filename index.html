@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Crystal Collector</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
   </head>
@@ -10,11 +12,13 @@
 
 <div class="jumbotron">
   <h1>Crystal Collector</h1>
+
 </div>
 
 
 <div class="row">
   <div class="col-lg-12">
+      <h1 id="num">NUMBER</h1>
     <div class="car card-default">
       <div class="card-header">
         <div class="card-title">
@@ -22,19 +26,32 @@
         </div>
       </div>
       <div class="card-body">
-
-        <p></p>
-
+        <ul>
+          <li>Clicks on a crystal, it will add a specific amount of points to your total score.</li>
+          <li>You win if the total score matches the random number from the beginning of the game</li>
+          <li>You lose if their score goes above the random number</li>
+          <li>The game restarts whenever the you win or lose</li>
+        </ul>
       </div>
     </div>
 
+    <div class="card card default">
+      <div class="card-header">
+        <div class="card-body">
+          <h4>Select a Crystal below</h4>
+        </div>
+        <img src="assets/img/c1.jpg" alt="c1" width="128" height="128" id="c1">
+        <img src="assets/img/c2.jpg" alt="c2" width="128" height="128" id="c2">
+        <img src="assets/img/c3.jpg" alt="c3" width="128" height="128" id="c3">
+        <img src="assets/img/c4.jpg" alt="c4" width="128" height="128" id="c4">
+        <input type="text" name="" id="c5" value="6">
+      </div>
 
-
-
+    </div>
   </div>
 </div>
 
 
-<script src="js/game.js"></script>
+  <script src="assets/js/game.js"></script>
   </body>
 </html>
