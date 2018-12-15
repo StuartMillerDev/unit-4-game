@@ -1,8 +1,10 @@
 img{
   width:auto;
   height:128px;
+  margin: 0 auto;
 }
 
 .images{
   display: inline-block;
+
 }
